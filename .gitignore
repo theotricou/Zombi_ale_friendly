@@ -1,1 +1,5 @@
 Output_folder/
+Test_Outputs/
+tests/
+Parameters/GenomeParametersTemplate.tsv
+Parameters/SpeciesTreeParametersTemplate.tsv

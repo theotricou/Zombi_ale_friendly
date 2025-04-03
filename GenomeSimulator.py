@@ -1718,7 +1718,16 @@ class GenomeSimulator():
 
 
     def choose_assortative_recipient(self, time, possible_recipients, donor, normalize_weights=True):
-        print("using new function")
+        """
+        This function chooses a recipient for the transfer event.
+
+        :param time: Time of the event
+        :param possible_recipients: Possible recipients
+        :param donor: Donor genome
+        :param normalize_weights: If True, the weights are normalized before the softmax
+        :return: recipient
+        """
+
         possible_recipients = sorted(possible_recipients)
         alpha = self.parameters["ALPHA"]
 
@@ -1752,7 +1761,8 @@ class GenomeSimulator():
             self._distance_vectors[donor][recipients_key] = distances
 
         weights = time - distances
-
+        # We can normalize weights or not. Default is no normalization, and this is 
+        # the original case.
         if normalize_weights:
             sum_weights = numpy.sum(weights)
             if sum_weights > 0:
