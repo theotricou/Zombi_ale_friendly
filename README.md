@@ -2,6 +2,9 @@
 
 <img src="https://github.com/AADavin/Zombi/blob/master/Images/ZombiLogo.png" alt="zombilogo" height = "150" width="300"/>
 
+### **This is a modified version of Zombi aim to improve tree output for reconciliation friendlier simulution**
+
+
 ### **Zombi: A phylogenetic simulator of trees, genomes and sequences that accounts for dead lineages**
 
 ----------
